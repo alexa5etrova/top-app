@@ -22,11 +22,25 @@
 }
 .ghost {
   background-color: none;
-  border: 1px solid var(--gray-light);
+  border: 1px solid var(--grey-light);
   color: var(--black);
 }
 
 .ghost:hover {
   background-color: var(--primary);
   color: var(--white);
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 10px;
+}
+.arrowDown {
+  transform: rotate(90deg);
+  transition: all 0.2s;
+}
+
+.primary svg,
+.ghost:hover svg {
+  fill: var(--white);
 }
